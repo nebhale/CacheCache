@@ -11,7 +11,25 @@ github "nebhale/CacheCache"
 ```
 
 ## Usage
+To use CacheCache, first start by importing the module. Next, create a new instance of the one of the `Cache` implementations. In most cases, using the `PropertyListCache` is correct. This creates a `Cache` that will write content to a property list in the `.CachesDirectory` of the filesystem.  Finally, call the `persist()` and `retrieve()` methods to access the cache.
 
+```swift
+import CacheCache
+
+final class Example {
+
+    private let cache = PropertyListCache<[String : String]>("example-type")
+
+    func example() {
+        let expected = ["test-key" : "test-value"]
+
+        self.cache.persist(payload) { return $0 }
+        let actual = self.cache.retrieve { return $0 as? Dictionary }
+
+        println(actual == expected)
+    }
+}
+```
 
 ## Contributing
 [Pull requests][p] are welcome.
