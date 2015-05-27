@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2407DB501B15A4DD00C1C851 /* CacheCache.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249D9FE31B0497BA00387A97 /* CacheCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		246373E91B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
 		246373EA1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
 		246373EB1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
@@ -63,6 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2407DB501B15A4DD00C1C851 /* CacheCache.framework in Copy Files */,
 				246373FF1B10491A002D32A6 /* LoggerLogger.framework in Copy Files */,
 				246373F41B1048E2002D32A6 /* Nimble.framework in Copy Files */,
 				246373F61B1048E2002D32A6 /* Quick.framework in Copy Files */,
