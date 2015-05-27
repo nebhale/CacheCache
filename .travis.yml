@@ -1,14 +1,26 @@
 language: objective-c
+osx_image: beta-xcode6.3
+
+xcode_project: CacheCache.xcodeproj
+xcode_scheme:
+- CacheCache-iOS
+- CacheCache-Mac
+xcode_sdk:
+- iphonesimulator8.3
+- macosx10.10
+
+matrix:
+  exclude:
+  - xcode_scheme: CacheCache-iOS
+    xcode_sdk: macosx10.10
+  - xcode_scheme: CacheCache-Mac
+    xcode_sdk: iphonesimulator8.3
 
 before_install:
 - brew update
 - brew outdated xctool || brew upgrade xctool
 - brew install carthage
-install: carthage build
-
-cache:
-  directories:
-  - Carthage/Build
+install: carthage bootstrap
 
 notifications:
   email: false
