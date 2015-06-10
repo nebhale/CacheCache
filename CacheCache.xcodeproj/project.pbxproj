@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		2407DB501B15A4DD00C1C851 /* CacheCache.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249D9FE31B0497BA00387A97 /* CacheCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		246373E91B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
-		246373EA1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
 		246373EB1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
-		246373EC1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
 		246373EE1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */; };
 		246373EF1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */; };
 		246373F41B1048E2002D32A6 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249DA0511B0F553A00387A97 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,13 +23,9 @@
 		249DA0161B049AD000387A97 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249D9FE31B0497BA00387A97 /* CacheCache.framework */; };
 		249DA02C1B049E2300387A97 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0211B049E2300387A97 /* CacheCache.framework */; };
 		249DA0441B04A20D00387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
-		249DA0451B04A21900387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
 		249DA0461B04A21F00387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
-		249DA0471B04A22E00387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
 		249DA0491B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
-		249DA04A1B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
 		249DA04B1B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
-		249DA04C1B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
 		249DA04E1B0F54E200387A97 /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA04D1B0F54E200387A97 /* LoggerLogger.framework */; };
 		249DA0501B0F54F100387A97 /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA04F1B0F54F100387A97 /* LoggerLogger.framework */; };
 		249DA0531B0F553A00387A97 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0511B0F553A00387A97 /* Nimble.framework */; };
@@ -309,7 +303,8 @@
 		249D9FDA1B0497B900387A97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ben Hale";
 				TargetAttributes = {
 					249D9FE21B0497B900387A97 = {
@@ -394,9 +389,6 @@
 			files = (
 				246373EE1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */,
 				246374011B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */,
-				249DA04A1B04A33E00387A97 /* InMemoryCache.swift in Sources */,
-				246373EA1B103AD7002D32A6 /* PropertyListCache.swift in Sources */,
-				249DA0451B04A21900387A97 /* Cache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +408,6 @@
 			files = (
 				246373EF1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */,
 				246374021B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */,
-				249DA04C1B04A33E00387A97 /* InMemoryCache.swift in Sources */,
-				246373EC1B103AD7002D32A6 /* PropertyListCache.swift in Sources */,
-				249DA0471B04A22E00387A97 /* Cache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +449,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -544,6 +534,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -565,6 +556,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -585,6 +577,7 @@
 				INFOPLIST_FILE = Specs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -600,6 +593,7 @@
 				INFOPLIST_FILE = Specs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -626,6 +620,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -649,6 +644,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -672,6 +668,7 @@
 				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -689,6 +686,7 @@
 				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

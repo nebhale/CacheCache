@@ -13,6 +13,7 @@
 // limitations under the License.
 
 
+@testable import CacheCache
 import Foundation
 import Nimble
 import Quick

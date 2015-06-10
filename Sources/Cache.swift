@@ -13,32 +13,28 @@
 // limitations under the License.
 
 
-/// The definition of a Cache.  A Cache is an instance that can persist a payload and retrieve it later.
-/// Implementations are free to choose how the payload is persisted.
+/// The definition of a Cache.  A Cache is an instance that can persist a payload and retrieve it later.  Implementations are free to choose how the payload is persisted.
 public protocol Cache {
 
-    /// A ``typealias`` defining the type of the payload managed by the Cache
+    /// A `typealias` defining the type of the payload managed by the Cache
     typealias PayloadType
 
-    /// A ``typealias`` for a function that can deserialize the cached data into the ``PayloadType``
+    /// A `typealias` for a function that can deserialize the cached data into the `PayloadType`
     typealias Deserializer = Any -> PayloadType?
 
-    /// A ``typealias`` for a function that can serialize the ``PayloadType`` into cached data
+    /// A `typealias` for a function that can serialize the `PayloadType` into cached data
     typealias Serializer = PayloadType -> Any
 
     /// Persists a payload for later retrieval
     ///
-    /// :param: payload    The payload to persist
-    /// :param: serializer The serializer to use to map the payload into cached data.  Will only be called if the
-    ///                    payload is non-``nil``.
+    /// - parameter payload:    The payload to persist
+    /// - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.
     func persist(payload: PayloadType?, serializer serialize: Serializer)
 
-    /// Retrieves a payload from an earlier persistence.  If ``persist()`` has never been called, then it will always
-    /// return ``nil``.
+    /// Retrieves a payload from an earlier persistence.  If `persist()` has never been called, then it will always return `nil`.
     ///
-    /// :param: deserializer The deserializer to use to mapt the cached data into the payload.  Will only be called if
-    ///                      the cached data is non-``nil``.
+    /// - parameter deserializer: The deserializer to use to mapt the cached data into the payload.  Will only be called if the cached data is non-`nil`.
     ///
-    /// :returns: The payload if one has been persisted and it can be properly deserialized
+    /// - returns: The payload if one has been persisted and it can be properly deserialized
     func retrieve(deserializer deserialize: Deserializer) -> PayloadType?
 }

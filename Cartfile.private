@@ -12,5 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-github "Quick/Nimble" ~> 1.0
-github "Quick/Quick"  ~> 0.3
+github "Quick/Nimble" ~> 2.0
+github "Quick/Quick"  ~> 0.4

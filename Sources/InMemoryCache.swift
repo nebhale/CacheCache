@@ -15,8 +15,7 @@
 
 import LoggerLogger
 
-/// An implementation of ``Cache`` that persists data in memory.  This persistence is not durable across restarts of an
-/// application and therefore should not be used as a production caching mechanism.
+/// An implementation of `Cache` that persists data in memory.  This persistence is not durable across restarts of an application and therefore should not be used as a production caching mechanism.
 public final class InMemoryCache<T>: Cache {
 
     typealias Deserializer = Any -> T?
@@ -29,22 +28,20 @@ public final class InMemoryCache<T>: Cache {
 
     private let type: String
 
-    /// Creates a new instance of ``InMemoryCache``
+    /// Creates a new instance of `InMemoryCache`
     ///
-    /// :param: type A user-readable representation of the type being cached
+    /// - parameter type: A user-readable representation of the type being cached
     public init(type: String) {
         self.type = type
     }
 
     /// Persists a payload for later retrieval
     ///
-    /// :param: payload    The payload to persist
-    /// :param: serializer The serializer to use to map the payload into cached data.  Will only be called if the
-    ///                    payload is non-``nil``.  The default is an *identity* implementation that makes no changes to
-    ///                    the payload.
+    /// - parameter payload:    The payload to persist
+    /// - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.  The default is an *identity* implementation that makes no changes to the payload.
     public func persist(payload: T?, serializer serialize: Serializer = InMemoryCache.identitySerializer) {
         if let payload = payload {
-            self.logger.debug("Persisting \(self.type) payload")
+            self.logger.info("Persisting \(self.type) payload")
 
             self.cache = serialize(payload)
 
@@ -54,17 +51,14 @@ public final class InMemoryCache<T>: Cache {
         }
     }
 
-    /// Retrieves a payload from an earlier persistence.  If ``persist()`` has never been called, then it will always
-    /// return ``nil``.
+    /// Retrieves a payload from an earlier persistence.  If `persist()` has never been called, then it will always return `nil`.
     ///
-    /// :param: deserializer The deserializer to use to mapt the cached data into the payload.  Will only be called if
-    ///                      the cached data is non-``nil``.  The default is an *identity* implementation that makes no 
-    ///                      changes to the payload.
+    /// - parameter deserializer: The deserializer to use to mapt the cached data into the payload.  Will only be called if the cached data is non-`nil`.  The default is an *identity* implementation that makes no changes to the payload.
     ///
-    /// :returns: The payload if one has been persisted and it can be properly deserialized
+    /// - returns: The payload if one has been persisted and it can be properly deserialized
     public func retrieve(deserializer deserialize: Deserializer = InMemoryCache.identityDeserializer) -> T? {
         if let cache = self.cache {
-            self.logger.debug("Retrieving \(self.type) payload")
+            self.logger.info("Retrieving \(self.type) payload")
 
             let payload = deserialize(cache)
 
