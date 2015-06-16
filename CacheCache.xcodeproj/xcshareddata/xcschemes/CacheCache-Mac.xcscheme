@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "249DA0201B049E2300387A97"
+               BlueprintIdentifier = "243545C31B2FFBD6009AD681"
                BuildableName = "CacheCache.framework"
                BlueprintName = "CacheCache-Mac"
                ReferencedContainer = "container:CacheCache.xcodeproj">
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "249DA02A1B049E2300387A97"
-               BuildableName = "CacheCacheSpecs-Mac.xctest"
-               BlueprintName = "CacheCacheSpecs-Mac"
+               BlueprintIdentifier = "243545CC1B2FFBD6009AD681"
+               BuildableName = "CacheCacheTests.xctest"
+               BlueprintName = "CacheCacheTests-Mac"
                ReferencedContainer = "container:CacheCache.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249DA0201B049E2300387A97"
+            BlueprintIdentifier = "243545C31B2FFBD6009AD681"
             BuildableName = "CacheCache.framework"
             BlueprintName = "CacheCache-Mac"
             ReferencedContainer = "container:CacheCache.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249DA0201B049E2300387A97"
+            BlueprintIdentifier = "243545C31B2FFBD6009AD681"
             BuildableName = "CacheCache.framework"
             BlueprintName = "CacheCache-Mac"
             ReferencedContainer = "container:CacheCache.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249DA0201B049E2300387A97"
+            BlueprintIdentifier = "243545C31B2FFBD6009AD681"
             BuildableName = "CacheCache.framework"
             BlueprintName = "CacheCache-Mac"
             ReferencedContainer = "container:CacheCache.xcodeproj">

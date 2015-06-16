@@ -7,198 +7,189 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2407DB501B15A4DD00C1C851 /* CacheCache.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249D9FE31B0497BA00387A97 /* CacheCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373E91B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
-		246373EB1B103AD7002D32A6 /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373E81B103AD7002D32A6 /* PropertyListCache.swift */; };
-		246373EE1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */; };
-		246373EF1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */; };
-		246373F41B1048E2002D32A6 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249DA0511B0F553A00387A97 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373F61B1048E2002D32A6 /* Quick.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249DA0521B0F553A00387A97 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373F81B1048F7002D32A6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 249DA0551B0F554E00387A97 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373FA1B1048F7002D32A6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 249DA0561B0F554E00387A97 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373FC1B104910002D32A6 /* LoggerLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 249DA04F1B0F54F100387A97 /* LoggerLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246373FF1B10491A002D32A6 /* LoggerLogger.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 249DA04D1B0F54E200387A97 /* LoggerLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		246374011B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246374001B104C26002D32A6 /* InMemoryCacheSpec.swift */; };
-		246374021B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246374001B104C26002D32A6 /* InMemoryCacheSpec.swift */; };
-		249DA0161B049AD000387A97 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249D9FE31B0497BA00387A97 /* CacheCache.framework */; };
-		249DA02C1B049E2300387A97 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0211B049E2300387A97 /* CacheCache.framework */; };
-		249DA0441B04A20D00387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
-		249DA0461B04A21F00387A97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0431B04A20D00387A97 /* Cache.swift */; };
-		249DA0491B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
-		249DA04B1B04A33E00387A97 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DA0481B04A33E00387A97 /* InMemoryCache.swift */; };
-		249DA04E1B0F54E200387A97 /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA04D1B0F54E200387A97 /* LoggerLogger.framework */; };
-		249DA0501B0F54F100387A97 /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA04F1B0F54F100387A97 /* LoggerLogger.framework */; };
-		249DA0531B0F553A00387A97 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0511B0F553A00387A97 /* Nimble.framework */; };
-		249DA0541B0F553A00387A97 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0521B0F553A00387A97 /* Quick.framework */; };
-		249DA0571B0F554E00387A97 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0551B0F554E00387A97 /* Nimble.framework */; };
-		249DA0581B0F554E00387A97 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249DA0561B0F554E00387A97 /* Quick.framework */; };
+		243545B01B2FFB48009AD681 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243545A51B2FFB48009AD681 /* CacheCache.framework */; };
+		243545CE1B2FFBD6009AD681 /* CacheCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243545C41B2FFBD6009AD681 /* CacheCache.framework */; };
+		24A61FCB1B2FFDEA00224EEB /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FCA1B2FFDEA00224EEB /* LoggerLogger.framework */; };
+		24A61FCD1B2FFDFC00224EEB /* LoggerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FCC1B2FFDFC00224EEB /* LoggerLogger.framework */; };
+		24A61FCF1B2FFEBB00224EEB /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FCE1B2FFEBB00224EEB /* Cache.swift */; };
+		24A61FD01B2FFEBB00224EEB /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FCE1B2FFEBB00224EEB /* Cache.swift */; };
+		24A61FD21B2FFF4700224EEB /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FD11B2FFF4700224EEB /* InMemoryCache.swift */; };
+		24A61FD31B2FFF4700224EEB /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FD11B2FFF4700224EEB /* InMemoryCache.swift */; };
+		24A61FD51B2FFF6900224EEB /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FD41B2FFF6900224EEB /* PropertyListCache.swift */; };
+		24A61FD61B2FFF6900224EEB /* PropertyListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FD41B2FFF6900224EEB /* PropertyListCache.swift */; };
+		24A61FD81B30014000224EEB /* LoggerLogger.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FCA1B2FFDEA00224EEB /* LoggerLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FDA1B30015300224EEB /* LoggerLogger.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FCC1B2FFDFC00224EEB /* LoggerLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FDD1B30020B00224EEB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FDB1B30020B00224EEB /* Nimble.framework */; };
+		24A61FDE1B30020B00224EEB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FDC1B30020B00224EEB /* Quick.framework */; };
+		24A61FDF1B30020F00224EEB /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FDB1B30020B00224EEB /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FE01B30021100224EEB /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FDC1B30020B00224EEB /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FE31B30023300224EEB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FE11B30023300224EEB /* Nimble.framework */; };
+		24A61FE41B30023300224EEB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FE21B30023300224EEB /* Quick.framework */; };
+		24A61FE51B30024A00224EEB /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FE21B30023300224EEB /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FE61B30024C00224EEB /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 24A61FE11B30023300224EEB /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24A61FE81B30027700224EEB /* InMemoryCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FE71B30027700224EEB /* InMemoryCacheSpec.swift */; };
+		24A61FE91B30027700224EEB /* InMemoryCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FE71B30027700224EEB /* InMemoryCacheSpec.swift */; };
+		24A61FEB1B3002AC00224EEB /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FEA1B3002AC00224EEB /* PropertyListCacheSpec.swift */; };
+		24A61FEC1B3002AC00224EEB /* PropertyListCacheSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A61FEA1B3002AC00224EEB /* PropertyListCacheSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		249DA0171B049AD000387A97 /* PBXContainerItemProxy */ = {
+		243545B11B2FFB48009AD681 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 249D9FDA1B0497B900387A97 /* Project object */;
+			containerPortal = 2435459C1B2FFB48009AD681 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 249D9FE21B0497B900387A97;
-			remoteInfo = "CacheCache-iOS";
+			remoteGlobalIDString = 243545A41B2FFB48009AD681;
+			remoteInfo = CacheCache;
 		};
-		249DA02D1B049E2300387A97 /* PBXContainerItemProxy */ = {
+		243545CF1B2FFBD6009AD681 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 249D9FDA1B0497B900387A97 /* Project object */;
+			containerPortal = 2435459C1B2FFB48009AD681 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 249DA0201B049E2300387A97;
+			remoteGlobalIDString = 243545C31B2FFBD6009AD681;
 			remoteInfo = CacheCache;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		246373F01B1048C8002D32A6 /* Copy Files */ = {
+		24A61FD71B3000C900224EEB /* Copy Carthage Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2407DB501B15A4DD00C1C851 /* CacheCache.framework in Copy Files */,
-				246373FF1B10491A002D32A6 /* LoggerLogger.framework in Copy Files */,
-				246373F41B1048E2002D32A6 /* Nimble.framework in Copy Files */,
-				246373F61B1048E2002D32A6 /* Quick.framework in Copy Files */,
+				24A61FD81B30014000224EEB /* LoggerLogger.framework in Copy Carthage Frameworks */,
+				24A61FDF1B30020F00224EEB /* Nimble.framework in Copy Carthage Frameworks */,
+				24A61FE01B30021100224EEB /* Quick.framework in Copy Carthage Frameworks */,
 			);
-			name = "Copy Files";
+			name = "Copy Carthage Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		246373F71B1048ED002D32A6 /* CopyFiles */ = {
+		24A61FD91B30014700224EEB /* Copy Carthage Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				246373FC1B104910002D32A6 /* LoggerLogger.framework in CopyFiles */,
-				246373F81B1048F7002D32A6 /* Nimble.framework in CopyFiles */,
-				246373FA1B1048F7002D32A6 /* Quick.framework in CopyFiles */,
+				24A61FDA1B30015300224EEB /* LoggerLogger.framework in Copy Carthage Frameworks */,
+				24A61FE61B30024C00224EEB /* Nimble.framework in Copy Carthage Frameworks */,
+				24A61FE51B30024A00224EEB /* Quick.framework in Copy Carthage Frameworks */,
 			);
+			name = "Copy Carthage Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		246373E81B103AD7002D32A6 /* PropertyListCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListCache.swift; sourceTree = "<group>"; };
-		246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListCacheSpec.swift; sourceTree = "<group>"; };
-		246374001B104C26002D32A6 /* InMemoryCacheSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryCacheSpec.swift; sourceTree = "<group>"; };
-		249D9FE31B0497BA00387A97 /* CacheCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		249DA0011B04992A00387A97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		249DA0071B04994100387A97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		249DA0101B049AD000387A97 /* CacheCacheSpecs-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CacheCacheSpecs-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		249DA0211B049E2300387A97 /* CacheCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		249DA02B1B049E2300387A97 /* CacheCacheSpecs-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CacheCacheSpecs-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		249DA0431B04A20D00387A97 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		249DA0481B04A33E00387A97 /* InMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryCache.swift; sourceTree = "<group>"; };
-		249DA04D1B0F54E200387A97 /* LoggerLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerLogger.framework; path = Carthage/Build/iOS/LoggerLogger.framework; sourceTree = "<group>"; };
-		249DA04F1B0F54F100387A97 /* LoggerLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerLogger.framework; path = Carthage/Build/Mac/LoggerLogger.framework; sourceTree = "<group>"; };
-		249DA0511B0F553A00387A97 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		249DA0521B0F553A00387A97 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		249DA0551B0F554E00387A97 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		249DA0561B0F554E00387A97 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		243545A51B2FFB48009AD681 /* CacheCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		243545AA1B2FFB48009AD681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243545AF1B2FFB48009AD681 /* CacheCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		243545B61B2FFB48009AD681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243545C41B2FFBD6009AD681 /* CacheCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		243545CD1B2FFBD6009AD681 /* CacheCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A61FCA1B2FFDEA00224EEB /* LoggerLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerLogger.framework; path = Carthage/Build/iOS/LoggerLogger.framework; sourceTree = "<group>"; };
+		24A61FCC1B2FFDFC00224EEB /* LoggerLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerLogger.framework; path = Carthage/Build/Mac/LoggerLogger.framework; sourceTree = "<group>"; };
+		24A61FCE1B2FFEBB00224EEB /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		24A61FD11B2FFF4700224EEB /* InMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryCache.swift; sourceTree = "<group>"; };
+		24A61FD41B2FFF6900224EEB /* PropertyListCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListCache.swift; sourceTree = "<group>"; };
+		24A61FDB1B30020B00224EEB /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		24A61FDC1B30020B00224EEB /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		24A61FE11B30023300224EEB /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		24A61FE21B30023300224EEB /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		24A61FE71B30027700224EEB /* InMemoryCacheSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryCacheSpec.swift; sourceTree = "<group>"; };
+		24A61FEA1B3002AC00224EEB /* PropertyListCacheSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListCacheSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		249D9FDF1B0497B900387A97 /* Frameworks */ = {
+		243545A11B2FFB48009AD681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA04E1B0F54E200387A97 /* LoggerLogger.framework in Frameworks */,
+				24A61FCB1B2FFDEA00224EEB /* LoggerLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA00D1B049AD000387A97 /* Frameworks */ = {
+		243545AC1B2FFB48009AD681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA0161B049AD000387A97 /* CacheCache.framework in Frameworks */,
-				249DA0531B0F553A00387A97 /* Nimble.framework in Frameworks */,
-				249DA0541B0F553A00387A97 /* Quick.framework in Frameworks */,
+				24A61FDD1B30020B00224EEB /* Nimble.framework in Frameworks */,
+				24A61FDE1B30020B00224EEB /* Quick.framework in Frameworks */,
+				243545B01B2FFB48009AD681 /* CacheCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA01D1B049E2300387A97 /* Frameworks */ = {
+		243545C01B2FFBD6009AD681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA0501B0F54F100387A97 /* LoggerLogger.framework in Frameworks */,
+				24A61FCD1B2FFDFC00224EEB /* LoggerLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA0281B049E2300387A97 /* Frameworks */ = {
+		243545CA1B2FFBD6009AD681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA02C1B049E2300387A97 /* CacheCache.framework in Frameworks */,
-				249DA0571B0F554E00387A97 /* Nimble.framework in Frameworks */,
-				249DA0581B0F554E00387A97 /* Quick.framework in Frameworks */,
+				24A61FE31B30023300224EEB /* Nimble.framework in Frameworks */,
+				24A61FE41B30023300224EEB /* Quick.framework in Frameworks */,
+				243545CE1B2FFBD6009AD681 /* CacheCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		249D9FD91B0497B900387A97 = {
+		2435459B1B2FFB48009AD681 = {
 			isa = PBXGroup;
 			children = (
-				249D9FFF1B04992A00387A97 /* Sources */,
-				249DA0051B04994100387A97 /* Specs */,
-				249DA00A1B04998200387A97 /* Fixtures */,
-				249DA00B1B0499A500387A97 /* Frameworks */,
-				249D9FE41B0497BA00387A97 /* Products */,
+				243545A71B2FFB48009AD681 /* CacheCache */,
+				243545B31B2FFB48009AD681 /* CacheCacheTests */,
+				24A61FC91B2FFDAC00224EEB /* Frameworks */,
+				243545A61B2FFB48009AD681 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		249D9FE41B0497BA00387A97 /* Products */ = {
+		243545A61B2FFB48009AD681 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				249D9FE31B0497BA00387A97 /* CacheCache.framework */,
-				249DA0101B049AD000387A97 /* CacheCacheSpecs-iOS.xctest */,
-				249DA0211B049E2300387A97 /* CacheCache.framework */,
-				249DA02B1B049E2300387A97 /* CacheCacheSpecs-Mac.xctest */,
+				243545A51B2FFB48009AD681 /* CacheCache.framework */,
+				243545AF1B2FFB48009AD681 /* CacheCacheTests.xctest */,
+				243545C41B2FFBD6009AD681 /* CacheCache.framework */,
+				243545CD1B2FFBD6009AD681 /* CacheCacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		249D9FFF1B04992A00387A97 /* Sources */ = {
+		243545A71B2FFB48009AD681 /* CacheCache */ = {
 			isa = PBXGroup;
 			children = (
-				249DA0431B04A20D00387A97 /* Cache.swift */,
-				249DA0011B04992A00387A97 /* Info.plist */,
-				249DA0481B04A33E00387A97 /* InMemoryCache.swift */,
-				246373E81B103AD7002D32A6 /* PropertyListCache.swift */,
+				243545AA1B2FFB48009AD681 /* Info.plist */,
+				24A61FCE1B2FFEBB00224EEB /* Cache.swift */,
+				24A61FD11B2FFF4700224EEB /* InMemoryCache.swift */,
+				24A61FD41B2FFF6900224EEB /* PropertyListCache.swift */,
 			);
-			path = Sources;
+			path = CacheCache;
 			sourceTree = "<group>";
 		};
-		249DA0051B04994100387A97 /* Specs */ = {
+		243545B31B2FFB48009AD681 /* CacheCacheTests */ = {
 			isa = PBXGroup;
 			children = (
-				249DA0071B04994100387A97 /* Info.plist */,
-				246374001B104C26002D32A6 /* InMemoryCacheSpec.swift */,
-				246373ED1B104736002D32A6 /* PropertyListCacheSpec.swift */,
+				243545B61B2FFB48009AD681 /* Info.plist */,
+				24A61FE71B30027700224EEB /* InMemoryCacheSpec.swift */,
+				24A61FEA1B3002AC00224EEB /* PropertyListCacheSpec.swift */,
 			);
-			path = Specs;
+			path = CacheCacheTests;
 			sourceTree = "<group>";
 		};
-		249DA00A1B04998200387A97 /* Fixtures */ = {
+		24A61FC91B2FFDAC00224EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Fixtures;
-			sourceTree = SOURCE_ROOT;
-		};
-		249DA00B1B0499A500387A97 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				249DA04F1B0F54F100387A97 /* LoggerLogger.framework */,
-				249DA04D1B0F54E200387A97 /* LoggerLogger.framework */,
-				249DA0551B0F554E00387A97 /* Nimble.framework */,
-				249DA0511B0F553A00387A97 /* Nimble.framework */,
-				249DA0561B0F554E00387A97 /* Quick.framework */,
-				249DA0521B0F553A00387A97 /* Quick.framework */,
+				24A61FCA1B2FFDEA00224EEB /* LoggerLogger.framework */,
+				24A61FCC1B2FFDFC00224EEB /* LoggerLogger.framework */,
+				24A61FDB1B30020B00224EEB /* Nimble.framework */,
+				24A61FE11B30023300224EEB /* Nimble.framework */,
+				24A61FDC1B30020B00224EEB /* Quick.framework */,
+				24A61FE21B30023300224EEB /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,14 +197,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		249D9FE01B0497B900387A97 /* Headers */ = {
+		243545A21B2FFB48009AD681 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA01E1B049E2300387A97 /* Headers */ = {
+		243545C11B2FFBD6009AD681 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,14 +214,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		249D9FE21B0497B900387A97 /* CacheCache-iOS */ = {
+		243545A41B2FFB48009AD681 /* CacheCache-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 249D9FF91B0497BA00387A97 /* Build configuration list for PBXNativeTarget "CacheCache-iOS" */;
+			buildConfigurationList = 243545B91B2FFB48009AD681 /* Build configuration list for PBXNativeTarget "CacheCache-iOS" */;
 			buildPhases = (
-				249D9FDE1B0497B900387A97 /* Sources */,
-				249D9FDF1B0497B900387A97 /* Frameworks */,
-				249D9FE01B0497B900387A97 /* Headers */,
-				249D9FE11B0497B900387A97 /* Resources */,
+				243545A01B2FFB48009AD681 /* Sources */,
+				243545A11B2FFB48009AD681 /* Frameworks */,
+				243545A21B2FFB48009AD681 /* Headers */,
+				243545A31B2FFB48009AD681 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -238,36 +229,36 @@
 			);
 			name = "CacheCache-iOS";
 			productName = CacheCache;
-			productReference = 249D9FE31B0497BA00387A97 /* CacheCache.framework */;
+			productReference = 243545A51B2FFB48009AD681 /* CacheCache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		249DA00F1B049AD000387A97 /* CacheCacheSpecs-iOS */ = {
+		243545AE1B2FFB48009AD681 /* CacheCacheTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 249DA0191B049AD000387A97 /* Build configuration list for PBXNativeTarget "CacheCacheSpecs-iOS" */;
+			buildConfigurationList = 243545BC1B2FFB48009AD681 /* Build configuration list for PBXNativeTarget "CacheCacheTests-iOS" */;
 			buildPhases = (
-				249DA00C1B049AD000387A97 /* Sources */,
-				249DA00D1B049AD000387A97 /* Frameworks */,
-				249DA00E1B049AD000387A97 /* Resources */,
-				246373F01B1048C8002D32A6 /* Copy Files */,
+				243545AB1B2FFB48009AD681 /* Sources */,
+				243545AC1B2FFB48009AD681 /* Frameworks */,
+				243545AD1B2FFB48009AD681 /* Resources */,
+				24A61FD71B3000C900224EEB /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				249DA0181B049AD000387A97 /* PBXTargetDependency */,
+				243545B21B2FFB48009AD681 /* PBXTargetDependency */,
 			);
-			name = "CacheCacheSpecs-iOS";
-			productName = "CacheCacheSpecs-iOS";
-			productReference = 249DA0101B049AD000387A97 /* CacheCacheSpecs-iOS.xctest */;
+			name = "CacheCacheTests-iOS";
+			productName = CacheCacheTests;
+			productReference = 243545AF1B2FFB48009AD681 /* CacheCacheTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		249DA0201B049E2300387A97 /* CacheCache-Mac */ = {
+		243545C31B2FFBD6009AD681 /* CacheCache-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 249DA0341B049E2300387A97 /* Build configuration list for PBXNativeTarget "CacheCache-Mac" */;
+			buildConfigurationList = 243545D51B2FFBD6009AD681 /* Build configuration list for PBXNativeTarget "CacheCache-Mac" */;
 			buildPhases = (
-				249DA01C1B049E2300387A97 /* Sources */,
-				249DA01D1B049E2300387A97 /* Frameworks */,
-				249DA01E1B049E2300387A97 /* Headers */,
-				249DA01F1B049E2300387A97 /* Resources */,
+				243545BF1B2FFBD6009AD681 /* Sources */,
+				243545C01B2FFBD6009AD681 /* Frameworks */,
+				243545C11B2FFBD6009AD681 /* Headers */,
+				243545C21B2FFBD6009AD681 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -275,95 +266,95 @@
 			);
 			name = "CacheCache-Mac";
 			productName = CacheCache;
-			productReference = 249DA0211B049E2300387A97 /* CacheCache.framework */;
+			productReference = 243545C41B2FFBD6009AD681 /* CacheCache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		249DA02A1B049E2300387A97 /* CacheCacheSpecs-Mac */ = {
+		243545CC1B2FFBD6009AD681 /* CacheCacheTests-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 249DA0371B049E2300387A97 /* Build configuration list for PBXNativeTarget "CacheCacheSpecs-Mac" */;
+			buildConfigurationList = 243545D81B2FFBD6009AD681 /* Build configuration list for PBXNativeTarget "CacheCacheTests-Mac" */;
 			buildPhases = (
-				249DA0271B049E2300387A97 /* Sources */,
-				249DA0281B049E2300387A97 /* Frameworks */,
-				249DA0291B049E2300387A97 /* Resources */,
-				246373F71B1048ED002D32A6 /* CopyFiles */,
+				243545C91B2FFBD6009AD681 /* Sources */,
+				243545CA1B2FFBD6009AD681 /* Frameworks */,
+				243545CB1B2FFBD6009AD681 /* Resources */,
+				24A61FD91B30014700224EEB /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				249DA02E1B049E2300387A97 /* PBXTargetDependency */,
+				243545D01B2FFBD6009AD681 /* PBXTargetDependency */,
 			);
-			name = "CacheCacheSpecs-Mac";
+			name = "CacheCacheTests-Mac";
 			productName = CacheCacheTests;
-			productReference = 249DA02B1B049E2300387A97 /* CacheCacheSpecs-Mac.xctest */;
+			productReference = 243545CD1B2FFBD6009AD681 /* CacheCacheTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		249D9FDA1B0497B900387A97 /* Project object */ = {
+		2435459C1B2FFB48009AD681 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ben Hale";
 				TargetAttributes = {
-					249D9FE21B0497B900387A97 = {
-						CreatedOnToolsVersion = 6.3.1;
+					243545A41B2FFB48009AD681 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					249DA00F1B049AD000387A97 = {
-						CreatedOnToolsVersion = 6.3.1;
+					243545AE1B2FFB48009AD681 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					249DA0201B049E2300387A97 = {
-						CreatedOnToolsVersion = 6.3.1;
+					243545C31B2FFBD6009AD681 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					249DA02A1B049E2300387A97 = {
-						CreatedOnToolsVersion = 6.3.1;
+					243545CC1B2FFBD6009AD681 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 249D9FDD1B0497B900387A97 /* Build configuration list for PBXProject "CacheCache" */;
+			buildConfigurationList = 2435459F1B2FFB48009AD681 /* Build configuration list for PBXProject "CacheCache" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 249D9FD91B0497B900387A97;
-			productRefGroup = 249D9FE41B0497BA00387A97 /* Products */;
+			mainGroup = 2435459B1B2FFB48009AD681;
+			productRefGroup = 243545A61B2FFB48009AD681 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				249D9FE21B0497B900387A97 /* CacheCache-iOS */,
-				249DA00F1B049AD000387A97 /* CacheCacheSpecs-iOS */,
-				249DA0201B049E2300387A97 /* CacheCache-Mac */,
-				249DA02A1B049E2300387A97 /* CacheCacheSpecs-Mac */,
+				243545A41B2FFB48009AD681 /* CacheCache-iOS */,
+				243545AE1B2FFB48009AD681 /* CacheCacheTests-iOS */,
+				243545C31B2FFBD6009AD681 /* CacheCache-Mac */,
+				243545CC1B2FFBD6009AD681 /* CacheCacheTests-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		249D9FE11B0497B900387A97 /* Resources */ = {
+		243545A31B2FFB48009AD681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA00E1B049AD000387A97 /* Resources */ = {
+		243545AD1B2FFB48009AD681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA01F1B049E2300387A97 /* Resources */ = {
+		243545C21B2FFBD6009AD681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA0291B049E2300387A97 /* Resources */ = {
+		243545CB1B2FFBD6009AD681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,61 +364,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		249D9FDE1B0497B900387A97 /* Sources */ = {
+		243545A01B2FFB48009AD681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA0491B04A33E00387A97 /* InMemoryCache.swift in Sources */,
-				246373E91B103AD7002D32A6 /* PropertyListCache.swift in Sources */,
-				249DA0441B04A20D00387A97 /* Cache.swift in Sources */,
+				24A61FD21B2FFF4700224EEB /* InMemoryCache.swift in Sources */,
+				24A61FD51B2FFF6900224EEB /* PropertyListCache.swift in Sources */,
+				24A61FCF1B2FFEBB00224EEB /* Cache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA00C1B049AD000387A97 /* Sources */ = {
+		243545AB1B2FFB48009AD681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246373EE1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */,
-				246374011B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */,
+				24A61FEB1B3002AC00224EEB /* PropertyListCacheSpec.swift in Sources */,
+				24A61FE81B30027700224EEB /* InMemoryCacheSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA01C1B049E2300387A97 /* Sources */ = {
+		243545BF1B2FFBD6009AD681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249DA04B1B04A33E00387A97 /* InMemoryCache.swift in Sources */,
-				246373EB1B103AD7002D32A6 /* PropertyListCache.swift in Sources */,
-				249DA0461B04A21F00387A97 /* Cache.swift in Sources */,
+				24A61FD31B2FFF4700224EEB /* InMemoryCache.swift in Sources */,
+				24A61FD61B2FFF6900224EEB /* PropertyListCache.swift in Sources */,
+				24A61FD01B2FFEBB00224EEB /* Cache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		249DA0271B049E2300387A97 /* Sources */ = {
+		243545C91B2FFBD6009AD681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246373EF1B104736002D32A6 /* PropertyListCacheSpec.swift in Sources */,
-				246374021B104C26002D32A6 /* InMemoryCacheSpec.swift in Sources */,
+				24A61FEC1B3002AC00224EEB /* PropertyListCacheSpec.swift in Sources */,
+				24A61FE91B30027700224EEB /* InMemoryCacheSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		249DA0181B049AD000387A97 /* PBXTargetDependency */ = {
+		243545B21B2FFB48009AD681 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 249D9FE21B0497B900387A97 /* CacheCache-iOS */;
-			targetProxy = 249DA0171B049AD000387A97 /* PBXContainerItemProxy */;
+			target = 243545A41B2FFB48009AD681 /* CacheCache-iOS */;
+			targetProxy = 243545B11B2FFB48009AD681 /* PBXContainerItemProxy */;
 		};
-		249DA02E1B049E2300387A97 /* PBXTargetDependency */ = {
+		243545D01B2FFBD6009AD681 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 249DA0201B049E2300387A97 /* CacheCache-Mac */;
-			targetProxy = 249DA02D1B049E2300387A97 /* PBXContainerItemProxy */;
+			target = 243545C31B2FFBD6009AD681 /* CacheCache-Mac */;
+			targetProxy = 243545CF1B2FFBD6009AD681 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		249D9FF71B0497BA00387A97 /* Debug */ = {
+		243545B71B2FFB48009AD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -447,7 +438,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,7 +449,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -466,7 +456,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +467,7 @@
 			};
 			name = Debug;
 		};
-		249D9FF81B0497BA00387A97 /* Release */ = {
+		243545B81B2FFB48009AD681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,7 +499,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,7 +509,7 @@
 			};
 			name = Release;
 		};
-		249D9FFA1B0497BA00387A97 /* Debug */ = {
+		243545BA1B2FFB48009AD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -531,17 +521,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = CacheCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
+				PRODUCT_NAME = CacheCache;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		249D9FFB1B0497BA00387A97 /* Release */ = {
+		243545BB1B2FFB48009AD681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -553,83 +543,50 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = CacheCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
+				PRODUCT_NAME = CacheCache;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		249DA01A1B049AD000387A97 /* Debug */ = {
+		243545BD1B2FFB48009AD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Specs/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				INFOPLIST_FILE = CacheCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCacheTests;
+				PRODUCT_NAME = CacheCacheTests;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		249DA01B1B049AD000387A97 /* Release */ = {
+		243545BE1B2FFB48009AD681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Specs/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				INFOPLIST_FILE = CacheCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCacheTests;
+				PRODUCT_NAME = CacheCacheTests;
 			};
 			name = Release;
 		};
-		249DA0351B049E2300387A97 /* Debug */ = {
+		243545D61B2FFBD6009AD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		249DA0361B049E2300387A97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -640,54 +597,74 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = CacheCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
+				PRODUCT_NAME = CacheCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		243545D71B2FFBD6009AD681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CacheCache/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
+				PRODUCT_NAME = CacheCache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		249DA0381B049E2300387A97 /* Debug */ = {
+		243545D91B2FFBD6009AD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Specs/Info.plist;
+				INFOPLIST_FILE = CacheCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCacheTests;
+				PRODUCT_NAME = CacheCacheTests;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		249DA0391B049E2300387A97 /* Release */ = {
+		243545DA1B2FFBD6009AD681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Specs/Info.plist;
+				INFOPLIST_FILE = CacheCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nebhale.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCacheTests;
+				PRODUCT_NAME = CacheCacheTests;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -695,52 +672,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		249D9FDD1B0497B900387A97 /* Build configuration list for PBXProject "CacheCache" */ = {
+		2435459F1B2FFB48009AD681 /* Build configuration list for PBXProject "CacheCache" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				249D9FF71B0497BA00387A97 /* Debug */,
-				249D9FF81B0497BA00387A97 /* Release */,
+				243545B71B2FFB48009AD681 /* Debug */,
+				243545B81B2FFB48009AD681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		249D9FF91B0497BA00387A97 /* Build configuration list for PBXNativeTarget "CacheCache-iOS" */ = {
+		243545B91B2FFB48009AD681 /* Build configuration list for PBXNativeTarget "CacheCache-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				249D9FFA1B0497BA00387A97 /* Debug */,
-				249D9FFB1B0497BA00387A97 /* Release */,
+				243545BA1B2FFB48009AD681 /* Debug */,
+				243545BB1B2FFB48009AD681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		249DA0191B049AD000387A97 /* Build configuration list for PBXNativeTarget "CacheCacheSpecs-iOS" */ = {
+		243545BC1B2FFB48009AD681 /* Build configuration list for PBXNativeTarget "CacheCacheTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				249DA01A1B049AD000387A97 /* Debug */,
-				249DA01B1B049AD000387A97 /* Release */,
+				243545BD1B2FFB48009AD681 /* Debug */,
+				243545BE1B2FFB48009AD681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		249DA0341B049E2300387A97 /* Build configuration list for PBXNativeTarget "CacheCache-Mac" */ = {
+		243545D51B2FFBD6009AD681 /* Build configuration list for PBXNativeTarget "CacheCache-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				249DA0351B049E2300387A97 /* Debug */,
-				249DA0361B049E2300387A97 /* Release */,
+				243545D61B2FFBD6009AD681 /* Debug */,
+				243545D71B2FFBD6009AD681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		249DA0371B049E2300387A97 /* Build configuration list for PBXNativeTarget "CacheCacheSpecs-Mac" */ = {
+		243545D81B2FFBD6009AD681 /* Build configuration list for PBXNativeTarget "CacheCacheTests-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				249DA0381B049E2300387A97 /* Debug */,
-				249DA0391B049E2300387A97 /* Release */,
+				243545D91B2FFBD6009AD681 /* Debug */,
+				243545DA1B2FFBD6009AD681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 249D9FDA1B0497B900387A97 /* Project object */;
+	rootObject = 2435459C1B2FFB48009AD681 /* Project object */;
 }
