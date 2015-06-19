@@ -527,7 +527,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
 				PRODUCT_NAME = CacheCache;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -549,6 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nebhale.CacheCache;
 				PRODUCT_NAME = CacheCache;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -604,7 +604,6 @@
 				PRODUCT_NAME = CacheCache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -629,6 +628,7 @@
 				PRODUCT_NAME = CacheCache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
