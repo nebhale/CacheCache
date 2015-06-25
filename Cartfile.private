@@ -13,4 +13,3 @@
 # limitations under the License.
 
 github "Quick/Nimble" ~> 2.0
-github "Quick/Quick"  ~> 0.4
