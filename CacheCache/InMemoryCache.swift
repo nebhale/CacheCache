@@ -42,6 +42,15 @@ public final class InMemoryCache<T>: Cache {
     }
 
     /**
+    Creates a new instance of `InMemoryCache`
+
+    - parameter type: Type being cached
+    */
+    convenience public init(type: T.Type) {
+        self.init(type: "\(type)")
+    }
+
+    /**
     Persists a payload for later retrieval
 
     - parameter payload:    The payload to persist

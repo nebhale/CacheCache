@@ -47,6 +47,16 @@ public final class PropertyListCache<T>: Cache {
     }
 
     /**
+    Creates a new instance of `PropertyListCache`
+
+    - parameter type:   Type being cached
+    - parameter bundle: The bundle to write the property list into.  The default is the `NSBundle.mainBundle()`.
+    */
+    convenience public init(type: T.Type, bundle: NSBundle = NSBundle.mainBundle()) {
+        self.init(type: "\(type)", bundle: bundle)
+    }
+
+    /**
     Persists a payload for later retrieval
 
     - parameter payload:    The payload to persist
