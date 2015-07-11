@@ -153,8 +153,8 @@
 		243545A71B2FFB48009AD681 /* CacheCache */ = {
 			isa = PBXGroup;
 			children = (
-				243545AA1B2FFB48009AD681 /* Info.plist */,
 				24A61FCE1B2FFEBB00224EEB /* Cache.swift */,
+				243545AA1B2FFB48009AD681 /* Info.plist */,
 				24A61FD11B2FFF4700224EEB /* InMemoryCache.swift */,
 				24A61FD41B2FFF6900224EEB /* PropertyListCache.swift */,
 			);

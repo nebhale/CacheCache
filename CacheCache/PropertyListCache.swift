@@ -25,10 +25,6 @@ An implementation of `Cache` that persists data into a property list written out
 */
 public final class PropertyListCache<T>: Cache {
 
-    typealias Deserializer = AnyObject -> T?
-
-    typealias Serializer = T -> AnyObject
-
     private let location: NSURL?
 
     private let logger = Logger()
@@ -62,7 +58,7 @@ public final class PropertyListCache<T>: Cache {
     - parameter payload:    The payload to persist
     - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.
     */
-    public func persist(payload: T?, serializer serialize: Serializer) {
+    public func persist(payload: T?, serializer serialize: T -> Any) {
         if let location = self.location, let payload = payload, let cache = cache(serialize(payload)) {
             self.logger.info("Persisting \(self.type) payload to \(location)")
 
@@ -81,8 +77,8 @@ public final class PropertyListCache<T>: Cache {
 
     - returns: The payload if one has been persisted and it can be properly deserialized
     */
-    public func retrieve(deserializer deserialize: Deserializer) -> T? {
-        if let location = self.location, let data = NSData(contentsOfURL: location), let cache: AnyObject = cache(data) {
+    public func retrieve(deserializer deserialize: Any -> T?) -> T? {
+        if let location = self.location, let data = NSData(contentsOfURL: location), let cache: Any = cache(data) {
             self.logger.info("Retrieving \(self.type) payload from \(location)")
 
             let payload = deserialize(cache)
@@ -95,7 +91,7 @@ public final class PropertyListCache<T>: Cache {
         }
     }
 
-    private func cache(data: NSData) -> AnyObject? {
+    private func cache(data: NSData) -> Any? {
         do {
             return try NSPropertyListSerialization.propertyListWithData(data, options: NSPropertyListReadOptions.Immutable, format: nil)
         } catch {
@@ -104,9 +100,14 @@ public final class PropertyListCache<T>: Cache {
         }
     }
 
-    private func cache(payload: AnyObject) -> NSData? {
+    private func cache(payload: Any) -> NSData? {
+        guard let _payload = payload as? AnyObject else {
+            self.logger.error("Payload cannot be converted to AnyObject")
+            return nil
+        }
+
         do {
-            return try NSPropertyListSerialization.dataWithPropertyList(payload, format: .BinaryFormat_v1_0, options: 0)
+            return try NSPropertyListSerialization.dataWithPropertyList(_payload, format: .BinaryFormat_v1_0, options: 0)
         } catch {
             self.logger.error("Unable to convert property list to data")
             return nil

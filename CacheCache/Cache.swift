@@ -26,22 +26,12 @@ public protocol Cache {
     typealias PayloadType
 
     /**
-    A `typealias` for a function that can deserialize the cached data into the `PayloadType`
-    */
-    typealias Deserializer = Any -> PayloadType?
-
-    /**
-    A `typealias` for a function that can serialize the `PayloadType` into cached data
-    */
-    typealias Serializer = PayloadType -> Any
-
-    /**
     Persists a payload for later retrieval
 
     - parameter payload:    The payload to persist
     - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.
     */
-    func persist(payload: PayloadType?, serializer serialize: Serializer)
+    func persist(payload: PayloadType?, serializer serialize: PayloadType -> Any)
 
     /**
     Retrieves a payload from an earlier persistence.  If `persist()` has never been called, then it will always return `nil`.
@@ -50,5 +40,5 @@ public protocol Cache {
 
     - returns: The payload if one has been persisted and it can be properly deserialized
     */
-    func retrieve(deserializer deserialize: Deserializer) -> PayloadType?
+    func retrieve(deserializer deserialize: Any -> PayloadType?) -> PayloadType?
 }
