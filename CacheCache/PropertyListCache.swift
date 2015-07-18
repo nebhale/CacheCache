@@ -59,15 +59,17 @@ public final class PropertyListCache<T>: Cache {
     - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.
     */
     public func persist(payload: T?, serializer serialize: T -> Any) {
-        if let location = self.location, let payload = payload, let cache = cache(serialize(payload)) {
-            self.logger.info("Persisting \(self.type) payload to \(location)")
-
-            cache.writeToURL(location, atomically: true)
-
-            self.logger.debug("Persisted \(self.type) payload")
-        } else {
-            self.logger.debug("Did not persist \(self.type) payload")
+        guard let location = self.location, let payload = payload, let cache = cache(serialize(payload)) else {
+            self.logger.warn("Did not persist \(self.type) payload")
+            return
         }
+
+        self.logger.info("Persisting \(self.type) payload")
+        self.logger.debug("Persisting to \(location)")
+
+        cache.writeToURL(location, atomically: true)
+
+        self.logger.debug("Persisted \(self.type) payload")
     }
 
     /**
@@ -78,17 +80,18 @@ public final class PropertyListCache<T>: Cache {
     - returns: The payload if one has been persisted and it can be properly deserialized
     */
     public func retrieve(deserializer deserialize: Any -> T?) -> T? {
-        if let location = self.location, let data = NSData(contentsOfURL: location), let cache: Any = cache(data) {
-            self.logger.info("Retrieving \(self.type) payload from \(location)")
-
-            let payload = deserialize(cache)
-
-            self.logger.debug("Retrieved \(self.type) payload")
-            return payload
-        } else {
-            self.logger.debug("Did not retrieve \(self.type) payload")
+        guard let location = self.location, let data = NSData(contentsOfURL: location), let cache: Any = cache(data) else {
+            self.logger.warn("Did not retrieve \(self.type) payload")
             return nil
         }
+
+        self.logger.info("Retrieving \(self.type) payload")
+        self.logger.debug("Retrieving from \(location)")
+
+        let payload = deserialize(cache)
+
+        self.logger.debug("Retrieved \(self.type) payload")
+        return payload
     }
 
     private func cache(data: NSData) -> Any? {
@@ -117,15 +120,15 @@ public final class PropertyListCache<T>: Cache {
     private static func location(name: String, bundle: NSBundle) -> NSURL? {
         let fileManager = NSFileManager.defaultManager()
 
-        if let cachesDirectory = fileManager.URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask).first, let bundleIdentifier = bundle.bundleIdentifier {
-            do {
-                let bundleCacheDirectory = cachesDirectory.URLByAppendingPathComponent(bundleIdentifier, isDirectory: true)
-                try fileManager.createDirectoryAtURL(bundleCacheDirectory, withIntermediateDirectories: true, attributes: nil)
-                return bundleCacheDirectory.URLByAppendingPathComponent(name).URLByAppendingPathExtension("plist")
-            } catch {
-                return nil
-            }
-        } else {
+        guard let cachesDirectory = fileManager.URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask).first, let bundleIdentifier = bundle.bundleIdentifier else {
+            return nil
+        }
+
+        do {
+            let bundleCacheDirectory = cachesDirectory.URLByAppendingPathComponent(bundleIdentifier, isDirectory: true)
+            try fileManager.createDirectoryAtURL(bundleCacheDirectory, withIntermediateDirectories: true, attributes: nil)
+            return bundleCacheDirectory.URLByAppendingPathComponent(name).URLByAppendingPathExtension("plist")
+        } catch {
             return nil
         }
     }

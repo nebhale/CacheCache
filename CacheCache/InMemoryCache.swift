@@ -57,15 +57,14 @@ public final class InMemoryCache<T>: Cache {
     - parameter serializer: The serializer to use to map the payload into cached data.  Will only be called if the payload is non-`nil`.  The default is an *identity* implementation that makes no changes to the payload.
     */
     public func persist(payload: T?, serializer serialize: Serializer = InMemoryCache.identitySerializer) {
-        if let payload = payload {
-            self.logger.info("Persisting \(self.type) payload")
-
-            self.cache = serialize(payload)
-
-            self.logger.debug("Persisted \(self.type) payload")
-        } else {
-            self.logger.debug("Did not persist \(self.type) payload")
+        guard let payload = payload else {
+            self.logger.warn("Did not persist \(self.type) payload")
+            return
         }
+
+        self.logger.info("Persisting \(self.type) payload")
+        self.cache = serialize(payload)
+        self.logger.debug("Persisted \(self.type) payload")
     }
 
     /**
@@ -76,23 +75,21 @@ public final class InMemoryCache<T>: Cache {
     - returns: The payload if one has been persisted and it can be properly deserialized
     */
     public func retrieve(deserializer deserialize: Deserializer = InMemoryCache.identityDeserializer) -> T? {
-        if let cache = self.cache {
-            self.logger.info("Retrieving \(self.type) payload")
-
-            let payload = deserialize(cache)
-
-            self.logger.debug("Retrieved \(self.type) payload")
-            return payload
-        } else {
-            self.logger.debug("Did not retrieve \(self.type) payload")
+        guard let cache = self.cache else {
+            self.logger.warn("Did not retrieve \(self.type) payload")
             return nil
         }
+
+        self.logger.info("Retrieving \(self.type) payload")
+        let payload = deserialize(cache)
+        self.logger.debug("Retrieved \(self.type) payload")
+        return payload
     }
 
     private static func identityDeserializer(cache: Any) -> T? {
         return cache as? T
     }
-    
+
     private static func identitySerializer(payload: T) -> Any {
         return payload
     }
