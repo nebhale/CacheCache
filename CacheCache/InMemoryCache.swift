@@ -22,9 +22,9 @@ An implementation of `Cache` that persists data in memory.  This persistence is 
 */
 public final class InMemoryCache<T>: Cache {
 
-    typealias Deserializer = Any -> T?
+    public typealias Deserializer = Any -> T?
 
-    typealias Serializer = T -> Any
+    public typealias Serializer = T -> Any
 
     private var cache: Any?
 
